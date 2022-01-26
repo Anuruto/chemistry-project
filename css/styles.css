@@ -8,24 +8,78 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 100vh;
+  font-size: 1.05rem;
 }
 
 ::-moz-selection {
   background-color: #aefeff;
   color: #35858b;
+  font-weight: 500;
 }
 
 ::selection {
   background-color: #aefeff;
   color: #35858b;
+  font-weight: 500;
+}
+
+::-webkit-scrollbar {
+  width: 0.8em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #35858b;
+  border-radius: 1em;
+  margin-block: 1.4em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #aefeff;
+  border-radius: 1em;
+}
+
+@supports (scrollbar-color: red blue) {
+  * {
+    scrollbar-color: #35858b #aefeff;
+    scrollbar-width: thin;
+  }
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin-block: 1em;
+}
+
+.container .heading {
+  margin-top: 0;
+  text-decoration: underline;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-family: montserrat;
+}
+
+.container img {
+  height: 30rem;
+  width: 30rem;
+}
+
+.container p,
+.container li {
+  width: 40ch;
+}
+
+hr {
+  border: 0.1rem dashed #35858b;
+}
+
+li {
+  margin-block: 1em;
+}
+
+li:nth-of-type(3) {
+  margin-bottom: 5rem;
 }
 /*# sourceMappingURL=styles.css.map */
