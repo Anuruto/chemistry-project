@@ -1,0 +1,26 @@
+// google fonts import
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Poppins:wght@300;400;500&display=swap");
+
+$selection-font-color: #aefeff;
+$background-color: #072227;
+$selection-color: #35858b;
+$font-color: #4fbdba;
+body {
+  background-color: $background-color;
+  font-family: poppins;
+  color: $font-color;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+}
+::selection {
+  background-color: $selection-font-color;
+  color: $selection-color;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
