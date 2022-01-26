@@ -73,12 +73,26 @@ body {
 }
 
 hr {
-  border: 0.1rem dashed #35858b;
-  width: 100vw;
+  border: 0.1rem dashed #aefeff;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  width: 40vw;
+}
+
+img.exp {
+  height: 15rem;
+  width: 30rem;
+  border-radius: 1em;
 }
 
 li {
   margin-block: 1em;
+}
+
+.zero {
+  margin: 0;
+  font-family: Poppins;
 }
 
 .heading:nth-of-type(4) {
@@ -99,5 +113,22 @@ li {
   body {
     font-size: 1.3rem;
   }
+}
+
+.footer {
+  background-color: #35858b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2em;
+}
+
+.footer img {
+  height: 6em;
+  opacity: 50%;
+  border-radius: 10em;
 }
 /*# sourceMappingURL=styles.css.map */

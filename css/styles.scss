@@ -5,11 +5,11 @@ $selection-font-color: #aefeff;
 $background-color: #072227;
 $selection-color: #35858b;
 $font-color: #4fbdba;
+
 body {
   background-color: $background-color;
   font-family: poppins;
   color: $font-color;
-
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -66,12 +66,26 @@ body {
 }
 hr {
   //   height: 0.5rem;
-  border: 0.1rem dashed $selection-color;
-  width: 100vw;
+  border: 0.1rem dashed $selection-font-color;
+  display: grid;
+  place-items: center;
+  width: 40vw;
+}
+
+img.exp {
+  height: 15rem;
+  width: 30rem;
+  border-radius: 1em;
+  // float: right;
 }
 
 li {
   margin-block: 1em;
+}
+
+.zero {
+  margin: 0;
+  font-family: Poppins;
 }
 
 .heading:nth-of-type(4) {
@@ -88,4 +102,16 @@ li {
   body {
     font-size: 1.3rem;
   }
-} ;
+}
+
+.footer {
+  background-color: $selection-color;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  img {
+    height: 6em;
+    opacity: 50%;
+    border-radius: 10em;
+  }
+}
