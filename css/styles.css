@@ -9,7 +9,6 @@ body {
           box-sizing: border-box;
   height: 100vh;
   font-size: 0.8rem;
-  overflow-x: hidden;
 }
 
 ::-moz-selection {
@@ -124,6 +123,9 @@ li {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 2em;
+  width: 30rem;
+  height: 6rem;
+  margin-right: 0;
 }
 
 .footer img {
