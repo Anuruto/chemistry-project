@@ -9,6 +9,7 @@ body {
           box-sizing: border-box;
   height: 100vh;
   font-size: 0.8rem;
+  overflow-x: hidden;
 }
 
 ::-moz-selection {
@@ -133,12 +134,13 @@ li {
 }
 
 .footer h1 {
-  margin-left: 5em;
+  margin-left: 1em;
 }
 
 .footer img {
   height: 6em;
   opacity: 50%;
   border-radius: 10em;
+  position: absolute;
 }
 /*# sourceMappingURL=styles.css.map */

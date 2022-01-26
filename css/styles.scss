@@ -15,7 +15,7 @@ body {
   box-sizing: border-box;
   height: 100vh;
   font-size: 0.8rem;
-  // overflow-x: hidden;
+  overflow-x: hidden;
 }
 ::selection {
   background-color: $selection-font-color;
@@ -119,11 +119,12 @@ li {
   // height: 6rem;
   margin-right: 0;
   h1 {
-    margin-left: 5em;
+    margin-left: 1em;
   }
   img {
     height: 6em;
     opacity: 50%;
     border-radius: 10em;
+    position: absolute;
   }
 }
