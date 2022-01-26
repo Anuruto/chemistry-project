@@ -8,7 +8,8 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 100vh;
-  font-size: 1.05rem;
+  font-size: 0.8rem;
+  overflow-x: hidden;
 }
 
 ::-moz-selection {
@@ -73,13 +74,30 @@ body {
 
 hr {
   border: 0.1rem dashed #35858b;
+  width: 100vw;
 }
 
 li {
   margin-block: 1em;
 }
 
-li:nth-of-type(3) {
-  margin-bottom: 5rem;
+.heading:nth-of-type(4) {
+  margin-inline: 5em;
+}
+
+@media (min-width: 1090px) {
+  .float {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 3em;
+  }
+  body {
+    font-size: 1.3rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
