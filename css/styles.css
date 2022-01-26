@@ -10,6 +10,7 @@ body {
   height: 100vh;
   font-size: 0.8rem;
   overflow-x: hidden;
+  width: 100vw;
 }
 
 ::-moz-selection {
